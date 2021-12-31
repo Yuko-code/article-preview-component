@@ -41,7 +41,6 @@ shareBtnLg.addEventListener('click', (e)=>{
             shareBtnLgOff.remove();
             author.appendChild(shareBtnLg);
 })
-
 });
 
 

@@ -10,9 +10,9 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML, CSS and a tiny bit of JavaScript.**
 
-# Frontend Mentor - NFT preview card component solution
+# Frontend Mentor - Article preview component
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Article preview component](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT/hub/article-preview-component-0jqZUy-ut). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -47,8 +47,11 @@ Users should be able to:
 
 ### Useful resources
 
-- []()
-- []()
+- [Sizing Icons](https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/sizing-icons)
+- [CSS background-position Property](https://www.w3schools.com/cssref/pr_background-position.asp)
+- [Rotate 45-degree element around vertical axis](https://stackoverflow.com/questions/42834529/rotate-45-degree-element-around-vertical-axis)
+- [Create speech bubble ](https://www.youtube.com/watch?v=pgMIp4ghGr0&t=175s)
+- [Learn CSS Position In 9 Minutes](https://www.youtube.com/watch?v=jx5jmI0UlXU&t=418s)
 
 ## Author
 
