@@ -6,17 +6,14 @@
     --light-grayish-blue:hsl(210, 46%, 95%);
 }
 
-
 html{
     font-size:16px;
 }
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Manrope', sans-serif;
     color:var(--very-dark-grayish-blue);
@@ -35,7 +32,6 @@ main,footer{
     width:87.2%;
     background-color: #fff;
 }
-
 .card-left{
     background-image: url("images/drawers.jpg");
     width: 100%;
@@ -68,21 +64,18 @@ main,footer{
     letter-spacing: 0.008rem;
     margin: 0 0 20px 0;
 }
-
 .card-footer{
 width:100%;
 display: flex;
 justify-content: center;
-padding:6px 0 20px 0;
+padding:10px 0 20px 0;
 border-radius: 0 0 10px 10px;
 }
-
-.author{
+.author, .share{
     width:80.42%;
-    max-width:330px;
+    max-width:370px;
     display:flex;
     justify-content: space-between;
-    padding-top:4px;
 }
 .author-avatar{
     width:40px;
@@ -101,7 +94,6 @@ border-radius: 0 0 10px 10px;
 .author-text-date{
     color:var(--grayish-blue);
 }
-
 .fa{
     text-decoration: none;
     color:var(--very-dark-grayish-blue);
@@ -113,17 +105,8 @@ border-radius: 0 0 10px 10px;
     width: 32px;
     padding:9px;
 }
-
 .share{
-    width:100%;
-    max-width:370px;
-    height:100%;
-    margin:0;
     color:var(--desaturated-dark-blue);
-    display:none;
-    justify-content: space-between;
-    align-items:center;
-    padding:12px 30px 0 30px;
 }
 .share-text{
     text-transform: uppercase;
@@ -131,12 +114,13 @@ border-radius: 0 0 10px 10px;
     font-size: 0.813rem;
     letter-spacing: 0.313rem;
     line-height: 1.25rem;
+    height:20px;
 }
 .share-icon-wrapper{
     display:flex;
     align-items: center;
     gap: 20px;
-
+    height:20px;
 }
 .fa-share-dark{
     background-color:var(--desaturated-dark-blue);
@@ -161,7 +145,37 @@ border-radius: 0 0 10px 10px;
 }
 
 @media screen and (min-width: 767px){
+    .card-container{
+        display:flex;
+        width:730px;
+    }
 
+    .card-left{
+        width:285px;
+        height:287px;
+        border-radius: 10px 0 0 10px;
+        background-size: cover;
+    }
+    .card-right{
+        width:450px;
+
+
+    }
+
+    .hero-title{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.016rem;
+        margin: 30px 0 20px 0;
+    }
+    .card-footer{
+        margin: 0;
+        padding: 0;
+    }
+    .author{
+        padding: 0;
+        margin: 0;
+    }
 
 
 }
