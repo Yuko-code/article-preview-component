@@ -30,6 +30,7 @@ main,footer{
 .card-container{
     border-radius: 10px;
     width:87.2%;
+    max-width:400px;
     background-color: #fff;
 }
 .card-left{
@@ -77,6 +78,7 @@ border-radius: 0 0 10px 10px;
     display:flex;
     justify-content: space-between;
 }
+
 .author-avatar{
     width:40px;
     height:40px;
@@ -107,6 +109,9 @@ border-radius: 0 0 10px 10px;
 }
 .share{
     color:var(--desaturated-dark-blue);
+    align-items:center;
+    padding-top:2px;
+    display:none;
 }
 .share-text{
     text-transform: uppercase;
@@ -114,12 +119,11 @@ border-radius: 0 0 10px 10px;
     font-size: 0.813rem;
     letter-spacing: 0.313rem;
     line-height: 1.25rem;
-    height:20px;
 }
 .share-icon-wrapper{
     display:flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     height:20px;
 }
 .fa-share-dark{
@@ -143,60 +147,69 @@ border-radius: 0 0 10px 10px;
 .noShow{
     display:none;
 }
+#shareBtn-lg{
+    display:none;
+}
 
-@media screen and (min-width: 767px){
+@media screen and (min-width: 1440px){
     .card-container{
         display:flex;
-        width:730px;
+        width:50.69%;
+        min-width: 650px;
+        max-width:750px;
+        height: 280px;
     }
-
     .card-left{
-        width:285px;
-        height:287px;
         border-radius: 10px 0 0 10px;
-        background-size: cover;
+        height:280px;
+        background-position: left top;
+        width: 90%;
     }
-    .card-right{
-        width:450px;
-
-
+    .hero, .author{
+        width:82.47%;
     }
-
     .hero-title{
         font-size: 1.25rem;
         line-height: 1.75rem;
         letter-spacing: 0.016rem;
-        margin: 30px 0 20px 0;
+        margin: 20px 0 10px 0;
     }
     .card-footer{
-        margin: 0;
-        padding: 0;
+        padding:15px 0 30px 0;
+        position:relative;
     }
     .author{
-        padding: 0;
-        margin: 0;
+        justify-content:start;
+    }
+    .author-text{
+        margin: 0 160px 0 10px;
+    }
+    #shareBtn-lg{
+        display:flex;
+    }
+    #shareBtn, #shareBtnDark{
+        display:none;
+    }
+    .bubble{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 30px 0 30px;
+        width:248px;
+        height:55px;
+        border-radius: 10px;
+        background-color: var(--very-dark-grayish-blue);
+        position:absolute;
+        top:-80px;
+        right:-70px;
+    }
+    .square{
+        height:12px;
+        width:12px;
+        background-color: var(--very-dark-grayish-blue);
+        position:absolute;
+        top:49px;
+        left:105px;
+        transform:rotateY(0deg) rotate(45deg);
     }
 
-
 }
-/*
-body
-.card-container
-  .card-left
-  .card-right
-    .hero
-      .hero-title
-      .hero-text
-
-  .card-footer
-    .author
-      .author-avatar
-      .author-text
-        .author-text-name
-        .author-text-date
-      .share-icon-bg
-        .share-icon
-    .share
-      .social-icon
-      .share-icon-dark
-*/
